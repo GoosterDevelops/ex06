@@ -1,4 +1,5 @@
-part of ex06;
+
+library define_functions_ex06;
 
 //question 1 function
 String isPalindrome(String theWord) {
@@ -77,13 +78,20 @@ return allNames;
 }
 
 //question 5 function
-playersClubs(var clubs, var players) {
 
-var playersWithClubs = new Map();
-
-for(var i = 0; i < clubs.length; i++){
-playersWithClubs[clubs[i]] = players[i];
+Map playersClubs (var players, var clubs){
+  var playersWithClubs = new Map();
+  var list2 = new List();
+  clubs.sort((a,b){ return a.compareTo(b);});
+  for (var i=0;i<clubs.length;i++){
+    players.forEach(
+    (x,y){
+    if(y==clubs[i])
+    list2.add(x);
+    }
+  );
+  playersWithClubs[ clubs[i] ] = new List.from(list2);
+  list2.clear();
 }
-
 return playersWithClubs;
 }

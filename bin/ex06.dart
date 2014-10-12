@@ -1,12 +1,12 @@
-library ex06;
-part 'functions.dart';
-
+import 'package:ex06/functions.dart';
 void main() {
 //Question 1
   
   String theWord = 'Laval';
+  String notPalindrome = 'Whale';
   print('Question 1:');
-  print("${isPalindrome(theWord)} \n");
+  print("${isPalindrome(theWord)}");
+  print("${isPalindrome(notPalindrome)} \n");
   
 //Question 2
   int year = 1993;
@@ -25,23 +25,22 @@ void main() {
   
 //Question 4:
   List names = ['Francois', 'Dave', 'Simon', 'Jason', 'Pierre-Olivier', 'Jean-Pascale', 'Sharonne', 'Julie', 'Suzanne'];
-  print("${createList(names)} \n");
+  print('Question 4:');
+  print("Original list: $names");
+  print("Processed list: ${createList(names)} \n");
       
 //Question 5:
-List clubs = ['Canadiens', 'Pitsburg', 'Rangers', 'Oilers'];
-List players = [['PK Subban', 'Lars Eller', 'Carey Price',
-                 'David Desharnais', 'Max Pacioretti', 'Brandon Gallagher'],
-                 ['Sidney Crosby', 'Evgeni Malkin', 'Chris Letang', 'Marc-Andre Fleury',
-                 'Craig Adams', 'Chris Kunitz'],
-                 ['Derek Stepan', 'Martin St-louis', 'Enrick Lundvisk',
-                 'Derick Brassard'],
-                 ['Tailor Hall', 'Jordan Erbarle', 'Ryan Nugent Hopkins',
-                 'Justin Shultz', 'David Perron', 'Nail Yakupob']];
 
-var listing = playersClubs(clubs, players);
-print('Question 5:');
-for(var x in listing.keys){
-  print("${x}: ${listing[x]}");
-}  
+print ('Question 5');
+var players={'PK Subban':'Canadiens', 'Lars Eller':'Canadiens', 'Sidney Crosby':'Pitsburg', 
+             'Evgeni Malkin':'Pitsburg', 'Chris Letang':'Pitsburg', 'Marc-Andre Fleury':'Pitsburg','Derek Stepan':'Rangers', 'Jonathan Quick':'Rangers', 'Martin St-louis':'Rangers', 'Tailor Hall':'Oilers', 'David Perron':'Oilers'};
+var clubs=['Canadiens', 'Pitsburg', 'Rangers', 'Oilers'];
+
+var new_list=new Map();
+print('List of players with their clubs: \n${players}');
+print('List of clubs:\n${clubs}');
+new_list=playersClubs(players,clubs);
+print('List of clubs ordered with their players');
+new_list.forEach((x,y){ print('$x $y'); });
     
 }
