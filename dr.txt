@@ -1,5 +1,14 @@
 ex06
 
+9/20
+
+-10
+similaire à l'exercice 6 de Pierre-Olivier Brassard ?
+ 
+-1 formatage (voir: https://www.dartlang.org/articles/style-guide/)
+
+---
+
 ?/20
 
 similaire à l'exercice 6 de Pierre-Olivier Brassard ?

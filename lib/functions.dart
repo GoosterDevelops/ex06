@@ -3,13 +3,13 @@ library define_functions_ex06;
 
 //question 1 function
 String isPalindrome(String theWord) {
-String toLower = theWord.toLowerCase();
-for (var i = 0; i < toLower.length / 2; i++) {
-  if (toLower[i] != toLower[toLower.length - i - 1]) {
-    return "$theWord is not a palindrome.";
+  String toLower = theWord.toLowerCase();
+  for (var i = 0; i < toLower.length / 2; i++) {
+    if (toLower[i] != toLower[toLower.length - i - 1]) {
+      return "$theWord is not a palindrome.";
+    }
   }
-}
-return "$theWord is a palindrome.";
+  return "$theWord is a palindrome.";
 }
 
 //question 2 function
