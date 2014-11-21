@@ -1,4 +1,5 @@
 import 'package:ex06/functions.dart';
+
 void main() {
 //Question 1
   
@@ -54,12 +55,10 @@ void main() {
   print("");
 
 
-void printList(List l) {
-  
-  for (int i = 0; i < l.length; i++) {
-    print(l.elementAt(i).toString());
+  void printList(List l) {    
+    for (int i = 0; i < l.length; i++) {
+      print(l.elementAt(i).toString());
+    }   
+    //return;
   }
-  
-  return;
-}
 }

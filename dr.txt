@@ -1,5 +1,19 @@
 ex06
 
+17/20
+
+-1 formatage (voir: https://www.dartlang.org/articles/style-guide/)
+
+5.
+-1
+Prepare two lists, one with the names of players and THEIR CLUBS.
+Se il vous plaît, ne pas utiliser les positions d'éléments de la liste 
+pour faire une correspondance entre les clubs et les joueurs
+-1
+Make the third LIST (not a map) 
+
+---
+
 9/20
 
 -10
